@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@hubteljs/checkout": "^1.1.3"
+  }
+}

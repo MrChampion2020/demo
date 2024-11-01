@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Integration</title>
+</head>
+<body>
+
+<div id="hubtel-checkout-iframe"></div>
+
+<script src="https://unified-pay.hubtel.com/js/v1/checkout.js"></script>
+<script>
+    const checkout = new CheckoutSdk();
+
+    const purchaseInfo = {
+        amount: 50,
+        purchaseDescription: "Payment of GHS 50.00 for (18013782) (MR JOHN DOE-233000000000)",
+        customerPhoneNumber: "233000000000",
+        clientReference: "unique-client-reference-12345",
+    };
+
+    const config = {
+        branding: "enabled",
+        callbackUrl: "https://yourcallbackurl.com",
+        merchantAccount: 11334,
+        basicAuth: "your-basic-auth-here",
+    };
+
+    const iframeStyle = {
+        width: '100%',
+        height: '500px',
+        border: 'none',
+    };
+
+    const openIframe = () => {
+        checkout.initIframe({
+            purchaseInfo,
+            config,
+            iframeStyle,
+            callBacks: {
+                onInit: () => console.log('Iframe Initialized'),
+                onPaymentSuccess: (data) => console.log('Payment Success', data),
+                onPaymentFailure: (data) => console.log('Payment Failure', data),
+                onLoad: () => console.log('Iframe Loaded'),
+                onFeesChanged: (fees) => console.log('Fees Changed', fees),
+                onResize: (size) => console.log('Iframe Resized', size?.height),
+            }
+        });
+    };
+
+    // Trigger the iframe when the page loads
+    openIframe();
+</script>
+</body>
+</html>

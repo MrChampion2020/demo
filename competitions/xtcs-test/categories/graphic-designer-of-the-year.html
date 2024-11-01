@@ -1,0 +1,795 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  
+
+		<!-- Primary Meta Tags -->
+		<title>Xtocast - Event Ticketing, USSD Voting & Management in Ghana</title>
+		<meta name="title" content="Xtocast - Event Ticketing, USSD Voting & Management in Ghana">
+		<meta name="description" content="Xtocast is the leading platform in Ghana for event ticketing, offline voting via USSD, and real-time management. Ideal for award schemes and beauty pageants.">
+		<meta name="keywords" content="event ticketing, USSD voting, *920*182#, Evoting platform, ticket verification, mobile money payments, award scheme management, beauty pageant voting, real-time dashboard, Ghana event ticketing, Africa ticketing system">
+	  
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://www.xtocast.com/">
+		<meta property="og:title" content="Xtocast - Event Ticketing, USSD Voting & Management in Ghana">
+		<meta property="og:description" content="Xtocast simplifies event management with seamless ticket verification, offline voting via USSD, and real-time dashboards. Perfect for award schemes and beauty pageants in Ghana and across Africa.">
+		<meta property="og:image" content="https://www.xtocast.com/images/xtocast-banner.png">
+	  
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="https://www.xtocast.com/">
+		<meta property="twitter:title" content="Xtocast - Event Ticketing, USSD Voting & Management in Ghana">
+		<meta property="twitter:description" content="Xtocast simplifies event management with seamless ticket verification, offline voting via USSD, and real-time dashboards. Ideal for award schemes and beauty pageants in Ghana.">
+		<meta property="twitter:image" content="https://www.xtocast.com/images/xtocast-banner.png">
+	  
+		<!-- Local SEO -->
+		<meta name="geo.region" content="GH">
+		<meta name="geo.placename" content="Accra">
+		<meta name="geo.position" content="5.6037;-0.1870">
+		<meta name="ICBM" content="5.6037, -0.1870">
+		 
+		<!-- All Plugins CSS -->
+		<link href="../../../assets/css/plugins/bootstrap-icons.css" rel="stylesheet">
+		<link href="../../../assets/css/plugins/font-awesome.css" rel="stylesheet">
+		<link href="../../../assets/css/plugins/animation.css" rel="stylesheet">
+		<link href="../../../assets/css/plugins/bootstrap.min.css" rel="stylesheet">
+		<link href="../../../assets/css/plugins/slick.css" rel="stylesheet">
+		<link href="../../../assets/css/plugins/slick-theme.css" rel="stylesheet">
+		<link href="../../../assets/css/plugins/choices.min.css" rel="stylesheet">
+		<link href="../../../assets/css/plugins/date-picker.css" rel="stylesheet">
+			
+		<!-- Custom CSS -->
+		<link href="../../../assets/css/styles.css" rel="stylesheet">
+		
+		<style>
+
+
+/* Main Wrapper and Basic Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+} */
+
+/* Preloader */
+.preloader {
+    display: none; 
+} 
+
+/* Header and Navigation Styling */
+/* .header {
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+    padding: 0.5rem 0;
+} */
+
+/* .topbar {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 0;
+    font-size: 0.875rem;
+} */
+
+/* .contact-info a,
+.contact-info span {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1rem;
+} */
+/* 
+.social-links a {
+    color: #fff;
+    margin: 0 0.5rem;
+} */
+/* 
+.mainHeader {
+    padding: 1rem 0;
+				
+} */
+
+/* .navigation .nav-menu > li > a {
+    color: #333;
+    font-weight: bold;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+} */
+
+/* .hostEvent a {
+    background-color: #007bff;
+    color: #fff !important;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+} */
+
+/* Page Title
+.pageTitle {
+    background-color: #007bff;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+} */
+/* 
+.pageTitle h2 {
+    font-size: 2rem;
+    font-weight: bold;
+} */
+/* 
+/* Search Bar /
+.customsearchWrap {
+    margin: 1rem 0;
+}
+
+.customsearchWrap input[type="search"] {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Voting Grid /
+.votingGrid {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.votingGrid:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.votingThumb img {
+    width: 100%;
+    height: auto;
+}
+
+.votingDetail {
+    padding: 1rem;
+    text-align: center;
+}
+
+.votingTitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.votingButton .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.votingButton .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design /
+@media (min-width: 576px) {
+    .votingGrid {
+        margin: 1rem 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .votingGrid {
+        margin: 1rem;
+    }
+
+    .mainHeader .nav-menu li {
+        margin: 0 1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .contact-info,
+    .social-links {
+        display: flex;
+    }
+
+    .mainHeader .nav-menu li {
+        margin: 0 1.5rem;
+    } 
+}*/
+
+		</style>
+    </head>
+	
+    <body>
+	
+		 <!-- ============================================================== -->
+        <!-- Preloader - style you can find in spinners.css -->
+        <!-- ============================================================== -->
+       <div class="preloader"></div>
+		
+        <!-- ============================================================== -->
+        <!-- Main wrapper - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <div id="main-wrapper">
+		
+            <!-- ============================================================== -->
+            <!-- Top header  -->
+            <!-- ============================================================== -->
+            <!-- Start Navigation -->
+			<div class="header header-light dark-text">
+				<div class="topbar d-flex align-items-center">
+					<div class="container d-flex justify-content-center justify-content-md-between">
+						<div class="contact-info d-flex align-items-center gap-2">
+							<i class="bi bi-envelope"></i><a href="mailto:hello@xtocast.com">hello@xtocast.com</a>
+							<i class="bi bi-telephone ms-4"></i><span>+233551196764</span>
+						</div>
+
+						<div class="social-links d-none d-md-flex align-items-center">
+							<a href="http://x.com/xtocast" class="twitter"><i class="bi bi-twitter-x"></i></a>
+							<a href="https://facebook.com/@xtocast" class="facebook"><i class="bi bi-facebook"></i></a>
+							<a href="https://instagram.com/@xtocast" class="instagram"><i class="bi bi-instagram"></i></a>
+							<a href="https://youtube.com/@xtocast" class="youtube"><i class="bi bi-youtube"></i></a>
+							<a href="https://www.linkedin.com/company/xtocast/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+						</div>
+					</div>
+				</div>
+				
+
+				<div class="mainHeader">
+					<div class="container">
+						<nav id="navigation" class="navigation navigation-landscape">
+							<div class="nav-header">
+								<a class="nav-brand" href="#">
+									<img src="../../../assets/img/logo.png" class="logo" alt="" />
+								</a>
+								<div class="nav-toggle"></div>
+							</div>
+							<div class="nav-menus-wrapper">
+								<ul class="nav-menu">
+								
+									<li class="active"><a href="../../../index.html">Home</a></li>
+									
+									<li><a href="../../../evoting.html">Evoting</a></li>
+									
+									<li><a href="../../../donation.html">Donation</a></li>
+									
+									<li><a href="../../../events.html">Events</a></li>
+
+									<li><a href="../../../results.html">Results</a></li>
+
+									<li><a href="../../../our_blog.html">Our Blog</a></li>
+									
+
+									<li><a href="JavaScript:Void(0);">Pages<span class="submenu-indicator"></span></a>
+										<ul class="nav-dropdown nav-submenu">
+											<li><a href="../../../pages/about-us.html">About Us</a></li> 
+											<li><a href="../../../pages/contact-us.html">Contact Us</a></li>										
+											<li><a href="../../../pages/help-center.html">Help Center</a></li>                                    
+											<li><a href="../../../pages/privacy-policy.html">Privacy Policy</a></li>                                    
+											<li><a href="../../../pages/terms-and-conditions.html">Terms & Conditions</a></li> 
+										</ul>
+									</li>
+									
+									
+									
+									<li class="hostEvent">
+										<a href="../../../host-event.html" >Host Event</a>
+									</li>
+									
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<!-- End Navigation -->
+			<div class="clearfix"></div>
+			<!-- ============================================================== -->
+			<!-- Top header  -->
+			<!-- ============================================================== -->
+			
+			<!-- ======================= Page Title ======================== -->
+			<div class="pageTitle">
+				<div class="container">
+					<div class="row align-items-center justify-content-center">
+						<div class="col-xl-9 col-lg-10 col-md-12">
+							
+							<div class="titleCaps">
+								<h2 class="title">Graphics Designer Of The Year - Nominees</h2>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ======================= Page Title ======================== -->
+			
+			
+			<!-- =========================== Categories Lists ======================= -->
+			<section>
+				<div class="container">
+				
+					<div class="row align-items-center justify-content-center">
+						
+						<div class="col-xl-8 col-lg-10 col-md-12">
+							<div class="customsearchWrap">
+								<!-- <form>
+									<div class="form-group">
+										<input type="search" class="form-control" placeholder="Search for Nominee...">
+									</div>
+								</form> -->
+
+								<form>
+									<div class="form-group search-container">
+											<input type="search" class="form-control search-input" placeholder="Search for nominee...">
+											<span class="search-icon">
+													<!-- SVG for a single-line black search icon -->
+													<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+															<circle cx="11" cy="11" r="8"></circle>
+															<line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+													</svg>
+											</span>
+									</div>
+							</form>
+							</div>
+						</div>
+						
+					</div>
+					
+					<div class="row align-items-center justify-content-between g-4">
+						
+						<!-- Single Categories List -->
+						<!-- <div class="col-xl-3 col-lg-3 col-md-5">
+							<div class="votingGrid shadow-sm">
+							
+								<div class="votingThumb">
+									<img src="../../../assets/img/xtocast test voting.jpg" class="img-fluid" alt="">
+								</div>
+								
+								<div class="votingDetail">
+								
+									<div class="detailHead">
+										<h4 class="votingTitle">Dr. Collins Joe</h4>
+									</div>
+									
+									<div class="votingButton">
+                                        
+										<a href="#" class="btn voting-btn">Vote Now</a>
+									</div>
+									
+								</div>
+								
+							</div>
+						</div> -->
+
+                        
+						
+						<!-- Single Categories List -->
+						<!-- <div class="col-xl-3 col-lg-3 col-md-5">
+							<div class="votingGrid shadow-sm">
+							
+								<div class="votingThumb">
+									<img src="../../../assets/img/xtocast test voting.jpg" class="img-fluid" alt="">
+								</div>
+								
+								<div class="votingDetail">
+								
+									<div class="detailHead">
+										<h4 class="votingTitle">Filibiin Fanax</h4>
+									</div>
+									
+									<div class="votingButton">
+										<a href="#" class="btn voting-btn">Vote Now</a>
+									</div>
+									
+								</div>
+								
+							</div>
+						</div>
+
+                        <-- Single Categories List --
+						<div class="col-xl-3 col-lg-3 col-md-5">
+							<div class="votingGrid shadow-sm">
+							
+								<div class="votingThumb">
+									<img src="../../../assets/img/xtocast test voting.jpg" class="img-fluid" alt="">
+								</div>
+								
+								<div class="votingDetail">
+								
+									<div class="detailHead">
+										<h4 class="votingTitle">Jayden Uriah</h4>
+									</div>
+									
+									<div class="votingButton">
+										<a href="#" class="btn voting-btn">Vote Now</a>
+									</div>
+									
+								</div>
+								
+							</div>
+						</div>
+
+                        <-- Single Categories List --
+						<div class="col-xl-3 col-lg-3 col-md-5">
+							<div class="votingGrid shadow-sm">
+							
+								<div class="votingThumb">
+									<img src="../../../assets/img/xtocast test voting.jpg" class="img-fluid" alt="">
+								</div>
+								
+								<div class="votingDetail">
+								
+									<div class="detailHead">
+										<h4 class="votingTitle">Hon. Divine Dogbatse</h4>
+									</div>
+									
+									<div class="votingButton">
+										<a href="#" class="btn voting-btn">Vote Now</a>
+									</div>
+									
+								</div>
+								
+							</div>
+						</div> -->
+                        
+						
+	
+							
+											
+											<div class="contestants">
+															<!-- Contestant cards will be dynamically inserted here -->
+											</div>
+					
+		
+
+						
+						
+					</div>
+					
+				</div>
+			</section>
+			<!-- =========================== Competitions Lists End ===================== -->
+
+            <!-- Log In Modal -->
+			<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginmodal" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered login-pop-form" role="document">
+					<div class="modal-content" id="loginmodal">
+						<span class="mod-close" data-bs-dismiss="modal" aria-hidden="true"><i class="fas fa-close"></i></span>
+						<div class="modal-header">
+							<div class="mdl-thumb"><img src="../../../assets/img/ico.png" class="img-fluid" width="70" alt=""></div>
+							<div class="mdl-title"><h4 class="modal-header-title">Hello, Again</h4></div>
+						</div>
+						<div class="modal-body">
+							<div class="modal-login-form">
+								<form>
+								
+									<div class="form-floating mb-4">
+										<input type="email" class="form-control" placeholder="name@example.com">
+										<label>User Name</label>
+									</div>
+									
+									<div class="form-floating mb-4">
+										<input type="password" class="form-control" placeholder="Password">
+										<label>Password</label>
+									</div>
+									
+									<div class="form-group">
+										<button type="submit" class="btn btn-primary full-width font--bold btn-lg">Log In</button>
+									</div>
+									
+									<div class="modal-flex-item mb-3">
+										<div class="modal-flex-first">
+											<div class="form-check form-check-inline">
+												<input class="form-check-input" type="checkbox" id="savepassword" value="option1">
+												<label class="form-check-label" for="savepassword">Save Password</label>
+											</div>
+										</div>
+										<div class="modal-flex-last">
+											<a href="JavaScript:Void(0);">Forget Password?</a>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="social-login">
+								<ul>
+									<li><a href="JavaScript:Void(0);" class="btn connect-fb"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+									<li><a href="JavaScript:Void(0);" class="btn connect-google"><i class="fa-brands fa-google"></i>Google+</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<p>Don't have an account yet?<a href="signup.html" class="text-primary font--bold ms-1">Sign Up</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Modal -->
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<!-- Modal -->
+				<div id="nomineeModal" class="modal">
+
+					<div class="modal-content">
+
+									<span class="close-modal">&times;</span>
+
+<!-- ================= opening container div -->
+
+									<div  class="mainModal">
+<!-- ================= opening container div -->
+
+									<div class="nominee-image">
+													<img id="modalNomineeImage" src="" alt="Nominee">
+									</div>
+
+
+									<div class="nominee-details">
+													<h2 id="modalNomineeName"></h2>
+													<p class="subtitle" id="modalNomineeSubtitle"></p>
+													<p class="ussd" id="modalNomineeUssd"></p>
+													
+													<label for="voteCount">Enter number of votes for <span id="modalNomineeNameVotes"></span></label>
+													<input type="number" id="voteCount" placeholder="Enter number of votes">
+													
+													<p class="amount">Amount to Pay: <span id="amountToPay">GHS 0.0</span></p>
+													<p class="amount">GHS 2 / vote</p>
+													
+													<label for="emailAddress">Email Address</label>
+													<input type="email" id="emailAddress" placeholder="Enter your email address">
+													
+													<p class="subtitle">Enter your email address if you want to get receipt for your payment</p>
+													
+													<div class="buttons">
+																	<button class="btn btn-tertiary" id="nomineeView">View insight</button>
+																	<button class="btn btn-secondary" id="cancelBtn">Cancel</button>
+																	<button class="btn btn-primary" id="submitBtn">Submit</button>
+													</div>
+
+									</div>
+<!-- ================= closing container div -->
+								</div>  
+<!-- ================= closing container div -->
+
+					</div>
+
+	</div>
+
+
+
+
+
+			
+			<!-- ============================ Footer Start ================================== -->
+			<footer class="dark-footer skin-dark-footer">
+				<div class="footer-middle">
+					<div class="container">
+						<div class="row justify-content-between">
+							
+							<div class="col-xl-5 col-lg-6 col-md-12 col-sm-12">
+								<div class="footer_widget">
+									<img src="../../../assets/img/logo-light.png" class="img-footer small mb-4" alt="" />
+									
+									<div class="footerCaps">
+										Xtocast is an electronic voting and ticketing platform that addresses the issues of traditional manual voting and on-site ticket sales. It ensures confidentiality and security, allowing users to vote or purchase tickets remotely, thus overcoming geographical barriers.
+									</div>
+									
+									<div class="footersocial mt-2">
+										<ul class="list-inline">
+											<li class="list-inline-item"><a href="https://facebook.com/@xtocast"><i class="bi bi-facebook"></i></a></li>
+											<li class="list-inline-item"><a href="http://x.com/xtocast"><i class="bi bi-twitter"></i></a></li>
+											<li class="list-inline-item"><a href="https://youtube.com/@xtocast"><i class="bi bi-youtube"></i></a></li>
+											<li class="list-inline-item"><a href="https://instagram.com/@xtocast"><i class="bi bi-instagram"></i></a></li>
+											<li class="list-inline-item"><a href="https://www.linkedin.com/company/xtocast/"><i class="bi bi-linkedin"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-xl-2 col-lg-3 col-md-6 col-sm-12">
+								<div class="footer_widget">
+									<h4 class="widget_title">Main Navigation</h4>
+									<ul class="footer-menu">
+										<li><a href="../../../evoting.html">Evoting</a></li>
+										<li><a href="../../../donation.html">Donation</a></li>
+										<li><a href="../../../events.html">Events</a></li>
+										<li><a href="../../../results.html">Results</a></li>
+										<li><a href="../../../contact-us.html">Contact US</a></li>
+									</ul>
+								</div>
+							</div>
+									
+							<div class="col-xl-2 col-lg-3 col-md-6 col-sm-12">
+								<div class="footer_widget">
+									<h4 class="widget_title">Event Organizers</h4>
+									<ul class="footer-menu">
+										<li><a href="http://localhost/xtocast.com/host-event.html">Host Event</a></li>
+										<li><a href="http://localhost/xtocast.com/https://dashboard.xtocast.com">Organizer Dashboard</a></li>
+										<li><a href="http://localhost/xtocast.com/help-center.html">Help Center</a></li>
+										<li><a href="http://localhost/xtocast.com/our-blog.html">Our Blog</a></li>
+										<li><a href="http://localhost/xtocast.com/ticket-scanner-app.html">Ticket Scanner App</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="col-xl-2 col-lg-3 col-md-6 col-sm-12">
+								<div class="footer_widget">
+									<h4 class="widget_title">Download Our Apps</h4>
+									<ul class="footer-menu">
+										<div class="app-wrap">
+											<p><a href="https://play.google.com/store/apps/details?id=com.xtocast.xtocast"><img src="../../../assets/img/light-play.png" class="img-fluid" alt=""></a></p>
+											<p><a href="https://apps.apple.com/gh/app/xtocast/id28062004"><img src="../../../assets/img/light-ios.png" class="img-fluid" alt=""></a></p>
+										</div>
+										
+									</ul>
+								</div>
+							</div>
+								
+						</div>
+					</div>
+				</div>
+				
+				<div class="footer-bottom br-top">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-lg-12 col-md-12 text-center">
+								<p class="mb-0">Copyright © 2024 - Xtocast | All Rights Reserved | Developed By Xtottel Ltd</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- ============================ Footer End ================================== -->
+			
+			<a id="tops-button" class="top-scroll" title="Back to top" href="#"><i class="ti-arrow-up"></i></a>
+			
+
+		</div>
+
+		<!-- ============================================================== -->
+		<!-- All Jquery -->
+		<!-- ============================================================== -->
+		<script src="../../../assets/js/jquery.min.js"></script>
+		<script src="../../../assets/js/popper.min.js"></script>
+		<script src="../../../assets/js/bootstrap.min.js"></script>
+		<script src="../../../assets/js/slick.js"></script>
+		<script src="../../../assets/js/counterup.js"></script>
+		<script src="../../../assets/js/moment.min.js"></script>
+		<script src="../../../assets/js/daterangepicker.js"></script>
+		<script src="../../../assets/js/choices.min.js"></script>		
+		<script src="../../../assets/js/custom.js"></script>
+		<!-- ============================================================== -->
+		<!-- This page plugins -->
+		<!-- ============================================================== -->			
+
+
+
+
+
+
+
+
+
+		<script>
+       
+
+			const nominees = [
+			{ id: 'EMMA1', name: 'Jame Lee', image: '../../../assets/img/xtocast test voting.jpg', description: 'Look Alike: Rap Song', subtitle: 'Rap Artist', ussd: '*920*121#', code: 'GLC01' },
+			{ id: 'EMMA2', name: 'Glory Bee', image: '../../../assets/img/xtocast test voting.jpg', description: 'Envy: Rap Song', subtitle: 'Hip Hop Artist', ussd: '*920*122#', code: 'GLC02' },
+			{ id: 'EMMA3', name: 'Easy Cooper', image: '../../../assets/img/xtocast test voting.jpg', description: 'Been a Friend: Rap song', subtitle: 'R&B Artist', ussd: '*920*123#', code: 'GLC03' },
+			{ id: 'EMMA4', name: 'Lile Johnson', image: '../../../assets/img/xtocast test voting.jpg', description: 'Just Alone: Rap song', subtitle: 'Pop Artist', ussd: '*920*124#', code: 'GLC04' },
+			{ id: 'EMMA5', name: 'Gloris Smith', image: '../../../assets/img/xtocast test voting.jpg', description: 'Dancing Sun: Rap song', subtitle: 'Dance Hall Artist', ussd: '*920*125#', code: 'GLC05' },
+			{ id: 'EMMA6', name: 'Set Bond', image: '../../../assets/img/xtocast test voting.jpg', description: 'Wisedom: Rap song', subtitle: 'Afrobeats Artist', ussd: '*920*126#', code: 'GLC06' },
+];
+
+				// Function to create nominee cards
+function createNomineeCards() {
+			const contestantsContainer = document.querySelector('.contestants');
+			if (!contestantsContainer) {
+							console.error('Contestants container not found');
+							return;
+			}
+			contestantsContainer.innerHTML = ''; // Clear existing content
+			nominees.forEach(nominee => {
+							const card = document.createElement('div');
+							card.className = 'contestant-card';
+							card.innerHTML = `
+											<img src="${nominee.image}" alt="${nominee.name}" class="contestant-image">
+											<div class="contestant-details">
+															<h3>${nominee.name}</h3>
+															<p>${nominee.description}</p>
+															<p>${nominee.id}</p>
+															<button class="vote-button">Vote</button>
+											</div>
+							`;
+							card.querySelector('img').addEventListener('click', () => openModal(nominee));
+							card.querySelector('button').addEventListener('click', () => openModal(nominee));
+							contestantsContainer.appendChild(card);
+			});
+}
+
+// Function to open modal
+function openModal(nominee) {
+			const modal = document.getElementById('nomineeModal');
+			const modalName = document.getElementById('modalNomineeName');
+			const modalImage = document.getElementById('modalNomineeImage');
+			const modalSubtitle = document.getElementById('modalNomineeSubtitle');
+			const modalUssd = document.getElementById('modalNomineeUssd');
+			const modalNomineeNameVotes = document.getElementById('modalNomineeNameVotes');
+
+			modalName.textContent = nominee.name;
+			modalImage.src = nominee.image;
+			modalImage.alt = nominee.name;
+			modalSubtitle.textContent = nominee.subtitle;
+			modalUssd.textContent = `USSD: ${nominee.ussd} | Nominee Code: ${nominee.code}`;
+			modalNomineeNameVotes.textContent = nominee.name;
+
+			modal.style.display = 'block';
+}
+
+// Function to update amount to pay
+function updateAmountToPay() {
+			const voteCount = document.getElementById('voteCount').value;
+			const amountToPay = document.getElementById('amountToPay');
+			const amount = voteCount * 2; // Assuming 2 GHS per vote
+			amountToPay.textContent = `GHS ${amount.toFixed(1)}`;
+}
+
+// Function to close modal
+function closeModal() {
+			const modal = document.getElementById('nomineeModal');
+			modal.style.display = 'none';
+}
+
+// Event listeners
+document.addEventListener('DOMContentLoaded', () => {
+			createNomineeCards();
+			
+			document.getElementById('voteCount').addEventListener('input', updateAmountToPay);
+			document.getElementById('cancelBtn').addEventListener('click', closeModal);
+			document.getElementById('submitBtn').addEventListener('click', () => {
+							alert('Vote submitted!'); 
+							closeModal();
+			});
+			document.getElementById('nomineeView').addEventListener('click', () => {
+							alert('Viewing insights...'); 
+			});
+
+		
+			document.querySelector('.close-modal').addEventListener('click', closeModal);
+
+			// Event listener to close modal when clicking outside
+			window.addEventListener('click', (event) => {
+							const modal = document.getElementById('nomineeModal');
+							if (event.target === modal) {
+											closeModal();
+							}
+			});
+});
+
+</script>
+	</body>
+</html>
