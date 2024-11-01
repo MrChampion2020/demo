@@ -1,5 +1,5 @@
 // Set your Stripe publishable key
-const stripe = Stripe('YOUR_STRIPE_PUBLISHABLE_KEY');
+const stripe = Stripe('pk_test_51Q1gtFKTNsqkYMrBOpf8FM246PAW6mq7QOcCJAffrH9M4Tsp3n6TGlHGPZA2g1phWCr8avF1bdvh5TewgNzx3jIm00YrUOw85F');
 
 // Get the payment form
 const paymentForm = document.getElementById('payment-form');
